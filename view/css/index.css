@@ -1,0 +1,53 @@
+body{
+  background: #ccc;
+}
+
+/* .safira{
+  width: 125px;
+  height: 100px;
+  position: absolute;
+  float: left;
+  top: 10px;
+  left: 10px;
+  background: #FFF;
+  border-radius: 100%;
+}
+
+.safira-olhos{
+  width: 30px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 100%;
+}
+
+.safira-olho-direito{
+  background: #AAA;
+  margin-left: 18%;
+  float: left;
+}
+
+.safira-olho-esquerdo{
+  background: #555;
+  margin-right: 18%;
+  float: right;
+}
+
+.safira-boca{
+  width: 80px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: 18%;
+  background: red;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+} */
+
+#map {
+    height: 500px;
+    width: 800px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
