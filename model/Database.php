@@ -6,10 +6,10 @@ namespace safira;
 class Database
 {
     private $system = "mysql";
-    private $host = "localhost";
-    private $user = "id10066215_gabriel";
+    private $host = "sql259.main-hosting.eu";
+    private $user = "u459296590_dev";
     private $pass = "q1w2e3r4";
-    private $db   = "id10066215_safira";
+    private $db   = "u459296590_oni";
     private $link;
 
     function __construct()
