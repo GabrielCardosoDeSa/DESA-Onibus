@@ -46,6 +46,8 @@
 
     {
 
+        //file_get_contents("http://robot-safira.000webhostapp.com/safira/api/updateLocBus.php?codBus=".$codBus."&lat=".$lat."&log=".$log."");
+
         //file_put_contents("log2.txt", json_encode($data)."\n", FILE_APPEND);
 
 

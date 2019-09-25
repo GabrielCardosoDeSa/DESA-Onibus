@@ -6,11 +6,11 @@ namespace safira;
 
 include_once($_SERVER['DOCUMENT_ROOT'].'/safira/model/Tables.php');
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/safira/model/VeiculoHistoricoLoc.php');
+//include_once($_SERVER['DOCUMENT_ROOT'].'/safira/model/VeiculoHistoricoLoc.php');
 
 
 
-use safira\VeiculoHistoricoLoc;
+//use safira\VeiculoHistoricoLoc;
 
 /**
 
@@ -18,7 +18,7 @@ use safira\VeiculoHistoricoLoc;
 
  */
 
-class Veiculo extends Tables
+class VeiculoTeste extends Tables
 
 {
 
@@ -71,10 +71,9 @@ class Veiculo extends Tables
 
 
     protected function afterSave()
-
     {
 
-        $historicoVeiculos = new VeiculoHistoricoLoc();
+       /* $historicoVeiculos = new VeiculoHistoricoLoc();
 
         $historicoVeiculos->setIdVeiculo($this->getId());
 
@@ -82,7 +81,7 @@ class Veiculo extends Tables
 
         $historicoVeiculos->setLongitude($this->getLongitude());
 
-        $historicoVeiculos->setDataLocalizacao($this->getDataLocalizacao());
+        $historicoVeiculos->setDataLocalizacao($this->getDataLocalizacao());*/
 
     }
 
