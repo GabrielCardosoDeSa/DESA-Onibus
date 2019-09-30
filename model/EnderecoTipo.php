@@ -1,10 +1,10 @@
 <?php
 
-namespace onibus;
+namespace safira;
 
 
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Tables.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/safira/model/Tables.php');
 
 
 /**
@@ -12,28 +12,21 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Tables.php');
  *
 
  */
-
-class Contato extends Tables
+class Endereco extends Tables
 
 {
 
     // Caracteristicas da Tabela
 
-
-
     // Atributos da Tabela
 
     private $id;
 
-	private $idPessoa;
+    private $nome;
 
-    private $idTipo;
+    private $dataCriacao;
 
-    private $valor;
-
-	private $dataCriacao;
-
-	private $dataAtualizacao;
+    private $dataAtualizacao;
 
     private $dataExclusao;
 
@@ -44,7 +37,7 @@ class Contato extends Tables
 
     {
 
-        $this->nameTable = "contato";
+        $this->nameTable = "endereco_tipo";
 
         parent::__construct();
 
@@ -52,7 +45,6 @@ class Contato extends Tables
 
 
     // GET AND SET
-    
 
     /**
      * @return mixed
@@ -77,59 +69,19 @@ class Contato extends Tables
     /**
      * @return mixed
      */
-    public function getIdPessoa()
+    public function getNome()
     {
-        return $this->idPessoa;
+        return $this->nome;
     }
 
     /**
-     * @param mixed $idPessoa
+     * @param mixed $nome
      *
      * @return self
      */
-    public function setIdPessoa($idPessoa)
+    public function setNome($nome)
     {
-        $this->idPessoa = $idPessoa;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getIdTipo()
-    {
-        return $this->idTipo;
-    }
-
-    /**
-     * @param mixed $idTipo
-     *
-     * @return self
-     */
-    public function setIdTipo($idTipo)
-    {
-        $this->idTipo = $idTipo;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getValor()
-    {
-        return $this->valor;
-    }
-
-    /**
-     * @param mixed $valor
-     *
-     * @return self
-     */
-    public function setValor($valor)
-    {
-        $this->valor = $valor;
+        $this->nome = $nome;
 
         return $this;
     }
@@ -194,4 +146,3 @@ class Contato extends Tables
         return $this;
     }
 }
-

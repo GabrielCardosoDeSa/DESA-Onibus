@@ -1,10 +1,10 @@
 <?php
 
-namespace onibus;
+namespace safira;
 
 
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Tables.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/safira/model/Tables.php');
 
 
 /**
@@ -12,28 +12,23 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Tables.php');
  *
 
  */
-
-class Contato extends Tables
+class Estado extends Tables
 
 {
 
     // Caracteristicas da Tabela
 
-
-
     // Atributos da Tabela
 
     private $id;
 
-	private $idPessoa;
+    private $uf;
 
-    private $idTipo;
+    private $nome;
 
-    private $valor;
+    private $dataCriacao;
 
-	private $dataCriacao;
-
-	private $dataAtualizacao;
+    private $dataAtualizacao;
 
     private $dataExclusao;
 
@@ -44,7 +39,7 @@ class Contato extends Tables
 
     {
 
-        $this->nameTable = "contato";
+        $this->nameTable = "estado";
 
         parent::__construct();
 
@@ -52,7 +47,6 @@ class Contato extends Tables
 
 
     // GET AND SET
-    
 
     /**
      * @return mixed
@@ -77,19 +71,19 @@ class Contato extends Tables
     /**
      * @return mixed
      */
-    public function getIdPessoa()
+    public function getUf()
     {
-        return $this->idPessoa;
+        return $this->uf;
     }
 
     /**
-     * @param mixed $idPessoa
+     * @param mixed $uf
      *
      * @return self
      */
-    public function setIdPessoa($idPessoa)
+    public function setUf($uf)
     {
-        $this->idPessoa = $idPessoa;
+        $this->uf = $uf;
 
         return $this;
     }
@@ -97,39 +91,19 @@ class Contato extends Tables
     /**
      * @return mixed
      */
-    public function getIdTipo()
+    public function getNome()
     {
-        return $this->idTipo;
+        return $this->nome;
     }
 
     /**
-     * @param mixed $idTipo
+     * @param mixed $nome
      *
      * @return self
      */
-    public function setIdTipo($idTipo)
+    public function setNome($nome)
     {
-        $this->idTipo = $idTipo;
-
-        return $this;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getValor()
-    {
-        return $this->valor;
-    }
-
-    /**
-     * @param mixed $valor
-     *
-     * @return self
-     */
-    public function setValor($valor)
-    {
-        $this->valor = $valor;
+        $this->nome = $nome;
 
         return $this;
     }
@@ -194,4 +168,3 @@ class Contato extends Tables
         return $this;
     }
 }
-

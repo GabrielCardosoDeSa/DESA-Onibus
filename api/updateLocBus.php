@@ -1,8 +1,8 @@
 <?php
 
-    namespace safira;
+    namespace onibus;
 
-    include_once($_SERVER['DOCUMENT_ROOT'].'/safira/model/Veiculo.php');
+    include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Veiculo.php');
 
 
 
