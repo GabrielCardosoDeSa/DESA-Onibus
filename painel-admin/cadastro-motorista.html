@@ -11,6 +11,7 @@
 
     <!--CSS PLUGIN-->
     <link rel="stylesheet" href="assets/plugin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugin/jquery-datatable/css/dataTables.bootstrap4.min.css">
     
     <!--CSS MAIN-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -126,7 +127,7 @@
                         <li class="middle">
                             <a href="" class="has-arrow"><i class="icon-note"></i><span>Cadastros</span></a>
                             <ul>
-                                <li><a href="">Motoristas</a></li>
+                                <li><a href="cadastro-motorista.html">Motoristas</a></li>
                                 <li><a href="">Veículos</a></li>
                                 <li><a href="">Rotas</a></li>
                             </ul>
@@ -183,12 +184,13 @@
                             </ul>
 
                             <div class="tab-content m-t-50">
-                                <div role="tabpanel" class="tab-pane in active" id="details" aria-expanded="true">
+                                <div role="tabpanel" class="tab-pane in active" id="details" aria-expanded="true">                                   
+
                                     <div class="table-responsive">
-                                        <table class="table table-hover">
+                                        <table class="table table-hover js-basic-example dataTable table-custom">
                                             <thead class="thead-dark">
                                                 <tr>
-                                                    <th class="width50">
+                                                    <th class="width10 th-none">
                                                         <label class="fancy-checkbox">
                                                             <input class="select-all" type="checkbox" name="checkbox">
                                                             <span></span>
@@ -200,12 +202,12 @@
                                                     <th>CPF / CNPJ</th>
                                                     <th>Idade</th>
                                                     <th>Validade CNH</th>
-                                                    <th class="text-center width50">Ações</th>
+                                                    <th class="text-center width10 th-none pl-0">Ações</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="width50">
+                                                    <td class="width10 pl-30">
                                                         <label class="fancy-checkbox">
                                                             <input class="checkbox-tick" type="checkbox" name="checkbox">
                                                             <span></span>
@@ -222,9 +224,9 @@
                                                         <button type="button" class="btn btn-link btn-sm" title="Editar"><i class="icon-pencil"></i></button>
                                                         <button type="button" data-type="confirm" class="btn btn-link btn-sm js-sweetalert" title="Excluir"><i class="icon-trash"></i></button>                                                            
                                                     </td>
-                                                </tr>                                                   
+                                                </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                                                 <tr>
-                                                    <td class="width50">
+                                                    <td class="width10 pl-30">
                                                         <label class="fancy-checkbox">
                                                             <input class="checkbox-tick" type="checkbox" name="checkbox">
                                                             <span></span>
@@ -241,10 +243,11 @@
                                                         <button type="button" class="btn btn-link btn-sm" title="Editar"><i class="icon-pencil"></i></button>
                                                         <button type="button" data-type="confirm" class="btn btn-link btn-sm js-sweetalert" title="Excluir"><i class="icon-trash"></i></button>                                                            
                                                     </td>
-                                                </tr>                                                   
-                                            </tbody>
+                                                </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                            </tbody>          
                                         </table>
                                     </div>
+                                                                                        
                                 </div>     
                                                                     
                                 <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">                                    
@@ -266,5 +269,7 @@
     <script src="assets/js/vendorscripts.bundle.js"></script>
     <script src="assets/js/mainscripts.bundle.js"></script>
 
+    <script src="assets/plugin/jquery-datatable/js/datatablescripts.bundle.js"></script>
+    <script src="assets/plugin/jquery-datatable/js/jquery-datatable.js"></script>
 </body>
 </html>
