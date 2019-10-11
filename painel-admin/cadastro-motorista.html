@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IGBus Monitoramento Inteligente">
+    <meta name="author" content="Igor Nicoletti - Gabriel Cardoso">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>IGBus Monitoramento Inteligente</title>
+
+    <!--CSS PLUGIN-->
+    <link rel="stylesheet" href="assets/plugin/bootstrap/css/bootstrap.css">
+    
+    <!--CSS MAIN-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/color_skins.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+</head>
+<body class="theme-blue">
+
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30"><img src="assets/images/thumbnail.png" width="48" height="48" alt="Mplify"></div>
+            <p>Por favor, espere...</p>        
+        </div>
+    </div>
+    <!-- Page Loader -->
+
+    <div class="overlay" style="display: none;"></div>
+
+    <div id="wrapper">
+        <!-- Menu Horizontal -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <div class="navbar-brand">
+                    <a href="">
+                        <img src="assets/images/logo-icon.svg" alt="Mplify Logo" class="img-responsive logo">
+                        <span class="name">IGBUS MI</span>
+                    </a>
+                </div>
+                <!-- Logo -->
+                
+                <div class="navbar-right">
+                    <ul class="list-unstyled clearfix mb-0">
+
+                        <!-- Hamburguer -->
+                        <li>
+                            <div class="navbar-btn btn-toggle-show">
+                                <button type="button" class="btn-toggle-offcanvas"><i class="lnr lnr-menu icon-list"></i></button>
+                            </div>                        
+                            <a href="javascript:void(0);" class="btn-toggle-fullwidth btn-toggle-hide"><i class="icon-list"></i></a>
+                        </li>
+                        <!-- Hamburguer -->
+
+                        <!-- Search -->
+                        <li>
+                            <form id="navbar-search" class="navbar-form search-form">
+                                <input value="" class="form-control" placeholder="Pesquisar" type="text">
+                                <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+                            </form>
+                        </li>
+                        <!-- Search -->
+
+                        <!-- Avatar -->
+                        <li>
+                            <div id="navbar-menu">
+                                <ul class="nav navbar-nav">
+                                                                
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                            <img class="rounded-circle" src="assets/images/user-small.png" width="30" alt="">
+                                        </a>
+                                        <div class="dropdown-menu animated flipInY user-profile">
+                                            <div class="d-flex p-3 align-items-center">
+                                                <div class="drop-left m-r-10">
+                                                    <img src="assets/images/user-small.png" class="rounded" width="50" alt="">
+                                                </div>
+                                                <div class="drop-right">
+                                                    <h4>Igor Nicoletti</h4>
+                                                    <p class="user-name">igornicoletti@outlook.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="m-t-10 p-3 drop-list">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="page-profile.html"><i class="icon-user"></i>Perfil</a></li>
+                                                    <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Mensagens</a></li>
+                                                    <li><a href="javascript:void(0);"><i class="icon-settings"></i>Configurações</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="page-login.html"><i class="icon-power"></i>Sair</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0);" class="icon-menu js-right-sidebar"><i class="icon-equalizer"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Avatar -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Menu Horizontal -->
+
+
+        <!-- Menu Vertical -->
+        <div id="leftsidebar" class="sidebar">
+            <div class="sidebar-scroll">
+
+                <nav id="leftsidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu">
+
+                        <li class="heading">Principal</li>
+                        <li class="active"><a href=""><i class="icon-home"></i><span>Painel de controle</span></a></li>
+
+                        <li class="heading">Formulários</li>
+                        <li class="middle">
+                            <a href="" class="has-arrow"><i class="icon-note"></i><span>Cadastros</span></a>
+                            <ul>
+                                <li><a href="">Motoristas</a></li>
+                                <li><a href="">Veículos</a></li>
+                                <li><a href="">Rotas</a></li>
+                            </ul>
+                        </li> 
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <!-- Menu Vertical -->
+    </div>
+        
+
+        
+        
+        
+        
+
+        
+    <div id="main-content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8 col-sm-12">                        
+                        <h2>Cadastros</h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-4 col-sm-12 text-right">
+                        <ul class="breadcrumb justify-content-end">
+                            <li class="breadcrumb-item"><a href="#"><i class="icon-home"></i></a></li>                            
+                            <li class="breadcrumb-item">Cadastros</li>
+                            <li class="breadcrumb-item active">Motoristas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+
+                <div class="col-lg-12 col-md-12">
+                    <div class="card open_task">
+
+                        <div class="header">
+                            <h2>Cadastro de motoristas</h2>
+                            <ul class="header-dropdown">
+                                <li><a href="javascript:void(0);" data-toggle="modal" data-target="#addcontact"><i class="icon-plus"></i></a></li>
+                                <li><a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="pulse"><i class="icon-refresh"></i></a></li>
+                                <li><a href="javascript:void(0);" class="full-screen"><i class="icon-size-fullscreen"></i></a></li>                                                              
+                            </ul>
+                        </div>
+
+                        <div class="body">
+                            <ul class="nav nav-tabs-new2">
+                                <li class="nav-item inlineblock"><a class="nav-link active" data-toggle="tab" href="#details" aria-expanded="true">Tabela</a></li>                                
+                                <li class="nav-item inlineblock"><a class="nav-link" data-toggle="tab" href="#history" aria-expanded="false">Formulário</a></li>
+                            </ul>
+
+                            <div class="tab-content m-t-50">
+                                <div role="tabpanel" class="tab-pane in active" id="details" aria-expanded="true">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th class="width50">
+                                                        <label class="fancy-checkbox">
+                                                            <input class="select-all" type="checkbox" name="checkbox">
+                                                            <span></span>
+                                                        </label>
+                                                    </th>
+                                                    <th>Nome</th>
+                                                    <th>E-mail</th>
+                                                    <th>Telefone</th>
+                                                    <th>CPF / CNPJ</th>
+                                                    <th>Idade</th>
+                                                    <th>Validade CNH</th>
+                                                    <th class="text-center width50">Ações</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="width50">
+                                                        <label class="fancy-checkbox">
+                                                            <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                            <span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>Igor Nicoletti</td>
+                                                    <td>igornicoletti@outlook.com</td>
+                                                    <td>(17) 9 99151 0013</td>
+                                                    <td>421.403.248-97</td>
+                                                    <td>26</td>
+                                                    <td>10-01-2022</td>
+                                                    <td class="text-center">                                                                                           
+                                                        <button type="button" class="btn btn-link btn-sm" title="Visualizar"><i class="icon-eye"></i></button>
+                                                        <button type="button" class="btn btn-link btn-sm" title="Editar"><i class="icon-pencil"></i></button>
+                                                        <button type="button" data-type="confirm" class="btn btn-link btn-sm js-sweetalert" title="Excluir"><i class="icon-trash"></i></button>                                                            
+                                                    </td>
+                                                </tr>                                                   
+                                                <tr>
+                                                    <td class="width50">
+                                                        <label class="fancy-checkbox">
+                                                            <input class="checkbox-tick" type="checkbox" name="checkbox">
+                                                            <span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>Igor Nicoletti</td>
+                                                    <td>igornicoletti@outlook.com</td>
+                                                    <td>(17) 9 99151 0013</td>
+                                                    <td>421.403.248-97</td>
+                                                    <td>26</td>
+                                                    <td>10-01-2022</td>
+                                                    <td class="text-center">                                                                                           
+                                                        <button type="button" class="btn btn-link btn-sm" title="Visualizar"><i class="icon-eye"></i></button>
+                                                        <button type="button" class="btn btn-link btn-sm" title="Editar"><i class="icon-pencil"></i></button>
+                                                        <button type="button" data-type="confirm" class="btn btn-link btn-sm js-sweetalert" title="Excluir"><i class="icon-trash"></i></button>                                                            
+                                                    </td>
+                                                </tr>                                                   
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>     
+                                                                    
+                                <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">                                    
+                                </div>                   
+                            </div>
+                        </div>                    
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--JS-->
+    <script src="assets/js/libscripts.bundle.js"></script>    
+    <script src="assets/js/vendorscripts.bundle.js"></script>
+    <script src="assets/js/mainscripts.bundle.js"></script>
+
+</body>
+</html>

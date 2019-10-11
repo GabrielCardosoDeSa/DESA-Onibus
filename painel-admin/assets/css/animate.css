@@ -571,6 +571,7 @@
   animation-name: wobble;
 }
 
+/*
 @-webkit-keyframes jello {
   from,
   11.1%,
@@ -665,6 +666,7 @@
   -webkit-transform-origin: center;
   transform-origin: center;
 }
+*/
 
 @-webkit-keyframes heartBeat {
   0% {

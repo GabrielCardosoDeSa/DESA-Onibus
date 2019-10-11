@@ -223,7 +223,6 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem;
 }
 
 button {
@@ -1515,12 +1514,13 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .table th,
 .table td {
-  padding: 0.75rem;
-  vertical-align: top;
+  padding: 0.7rem;
+  vertical-align: middle;
   border-top: 1px solid #dee2e6;
 }
 
@@ -2948,18 +2948,17 @@ fieldset:disabled a.btn {
 }
 
 .btn-link {
-  font-weight: 400;
-  color: #007bff;
+  color: #212529;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #3eacff;
+  text-decoration: none;
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
   box-shadow: none;
 }
 
