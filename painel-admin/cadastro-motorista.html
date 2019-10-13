@@ -12,7 +12,7 @@
     <!--CSS PLUGIN-->
     <link rel="stylesheet" href="assets/plugin/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/plugin/jquery-datatable/css/dataTables.bootstrap4.min.css">
-    
+
     <!--CSS MAIN-->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -141,11 +141,7 @@
         <!-- Menu Vertical -->
     </div>
         
-
-        
-        
-        
-      
+    
     <div id="main-content">
         <div class="container-fluid">
 
@@ -185,7 +181,6 @@
 
                             <div class="tab-content m-t-50">
                                 <div role="tabpanel" class="tab-pane in active" id="details" aria-expanded="true">                                   
-
                                     <div class="table-responsive">
                                         <table class="table table-hover js-basic-example dataTable table-custom">
                                             <thead class="thead-dark">
@@ -246,12 +241,152 @@
                                                 </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                                             </tbody>          
                                         </table>
-                                    </div>
-                                                                                        
+                                    </div>                                                                                
                                 </div>     
                                                                     
-                                <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">                                    
-                                </div>                   
+                                <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">                                       
+                                    <div class="row clearfix">
+                                        <div class="col-md-12">
+                                            
+                                            <div class="card">
+                                                <h6>Dados da habilitação</h6>
+                                                <div class="body">
+                                                    <div class="row clearfix">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="name" class="control-label">Nome completo</label>
+                                                                <input type="text" id="name" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="rg" class="control-label">RG</label>
+                                                                <input type="number" id="rg" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="cpf" class="control-label">CPF</label>
+                                                                <input type="number" id="cpf" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">                                                                
+                                                                <label for="orgao-emissor" class="control-label">Orgão Emissor</label>
+                                                                <select id="orgao-emissor" class="form-control" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>SSP/SP</option>
+                                                                </select>                                                
+                                                            </div>                                                           
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">                                                                
+                                                                <label for="categoria" class="control-label">Categoria</label>
+                                                                <select id="categoria" class="form-control" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>A</option>
+                                                                </select>                                                
+                                                            </div>                       
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="numero-registro" class="control-label">Número do registro</label>
+                                                                <input type="number" id="numero-registro" class="form-control">
+                                                            </div>        
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="validade" class="control-label">Validade</label>
+                                                                <input type="date" id="validade" class="form-control">
+                                                            </div>        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <h6>Dados Pessoais</h6>
+                                                <div class="body">
+                                                    <div class="row clearfix">
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">                                                                
+                                                                <label for="tipo-pessoa" class="control-label">Tipo de pessoa</label>
+                                                                <select id="tipo-pessoa" class="form-control" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>Pessoa Física</option>
+                                                                    <option>Pessoa Jurídica</option>
+                                                                </select>                                                
+                                                            </div>             
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="cpf-cnpj" class="control-label">CPF / CNPJ</label>
+                                                                <input type="number" id="cpf-cnpj" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="email" class="control-label">E-mail</label>
+                                                                <input type="text" id="email" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="celular" class="control-label">Celular</label>
+                                                                <input type="number" id="celular" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="logradouro" class="control-label">Logradouro</label>
+                                                                <input type="text" id="logradouro" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="numero" class="control-label">Número</label>
+                                                                <input type="number" id="numero" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="bairro" class="control-label">Bairro</label>
+                                                                <input type="text" id="bairro" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">                                                                
+                                                                <label for="cidade" class="control-label">Cidade</label>
+                                                                <select id="cidade" class="form-control" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>Cidade</option>
+                                                                </select>                                                
+                                                            </div>                                                                   
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">                                                                
+                                                                <label for="estado" class="control-label">Estado</label>
+                                                                <select id="estado" class="form-control" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>Estado</option>
+                                                                </select>                                                
+                                                            </div>                                                                  
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">                                                                
+                                                                <label for="naturalidade" class="control-label">Naturalidade</label>
+                                                                <select id="naturalidade" class="form-control" data-placeholder="Select">
+                                                                    <option></option>
+                                                                    <option>Naturalidade</option>
+                                                                </select>                                                
+                                                            </div>                                                                  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>     
                             </div>
                         </div>                    
 
@@ -267,9 +402,10 @@
     <!--JS-->
     <script src="assets/js/libscripts.bundle.js"></script>    
     <script src="assets/js/vendorscripts.bundle.js"></script>
-    <script src="assets/js/mainscripts.bundle.js"></script>
-
+    
     <script src="assets/plugin/jquery-datatable/js/datatablescripts.bundle.js"></script>
     <script src="assets/plugin/jquery-datatable/js/jquery-datatable.js"></script>
+    
+    <script src="assets/js/mainscripts.bundle.js"></script>
 </body>
 </html>
