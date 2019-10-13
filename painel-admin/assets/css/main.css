@@ -478,6 +478,9 @@ a:hover, a:focus {
 .width250 {
     width: 250px;
 }
+.width100p {
+    width: 100%;
+}
 .page-title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -753,7 +756,6 @@ footer {
     background: #fff;
     border-radius: .1875rem;
     border-color: #fff;
-    margin-bottom: 30px;
     position: relative;
     width: 100%}
 .card.fullscreen {
