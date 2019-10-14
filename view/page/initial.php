@@ -1,32 +1,32 @@
 <?php
 
-namespace safira\view;
+namespace onibus\view;
+
+include_once('../../config.php');
+
+include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/InitialController.php');
 
 
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/safira/controller/InitialController.php');
-
-
-
-use safira\InitialController;
+use onibus\InitialController;
 
 ?>
 
-<?php include_once($_SERVER['DOCUMENT_ROOT'].'/safira/view/include/header.php'); ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/view/include/header.php'); ?>
 
 
 
 
 
-<!-- <div class="safira">
+<!-- <div class="onibus">
 
-    <div class="safira-olhos safira-olho-direito"></div>
+    <div class="onibus-olhos onibus-olho-direito"></div>
 
-    <div class="safira-olhos safira-olho-esquerdo"></div>
+    <div class="onibus-olhos onibus-olho-esquerdo"></div>
 
-    <div class="safira-boca"></div>
+    <div class="onibus-boca"></div>
 
-    <div class="safira-boca1"></div>
+    <div class="onibus-boca1"></div>
 
 </div> -->
 
@@ -48,7 +48,7 @@ use safira\InitialController;
 
 <div id="map" ></div>
 
-<?php include_once($_SERVER['DOCUMENT_ROOT'].'/safira/view/include/footer.php'); ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/view/include/footer.php'); ?>
 
 
 

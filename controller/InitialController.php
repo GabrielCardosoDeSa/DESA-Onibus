@@ -2,11 +2,11 @@
 
 namespace onibus;
 
+include_once('../../config.php');
 
+include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/model/Veiculo.php');
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Veiculo.php');
-
-include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/controller/Controller.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/Controller.php');
 
 /**
 

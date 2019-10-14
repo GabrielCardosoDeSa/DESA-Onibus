@@ -2,9 +2,9 @@
 
 namespace onibus;
 
+include_once('../../config.php');
 
-
-include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Tables.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/model/Tables.php');
 
 
 /**

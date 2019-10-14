@@ -1,5 +1,5 @@
 <?php
-namespace safira;
+namespace onibus;
 /**
  *    Classe de ligaçao com o banco de dados de forma geral
  */

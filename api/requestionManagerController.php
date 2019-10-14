@@ -48,9 +48,9 @@
 
 	$controller = $data['controller'];
 
+	include_once('../../config.php');
 
-
-	include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/controller/'.$controller.'.php');
+	include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/'.$controller.'.php');
 
 
 

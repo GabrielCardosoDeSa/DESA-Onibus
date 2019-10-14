@@ -1,8 +1,8 @@
 <?php
 
     namespace onibus;
-
-    include_once($_SERVER['DOCUMENT_ROOT'].'/DeSa-Onibus/model/Veiculo.php');
+    include_once('../../config.php');
+    include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/model/Veiculo.php');
 
 
 
@@ -46,7 +46,7 @@
 
     {
 
-        //file_get_contents("http://robot-safira.000webhostapp.com/safira/api/updateLocBus.php?codBus=".$codBus."&lat=".$lat."&log=".$log."");
+        //file_get_contents("http://robot-onibus.000webhostapp.com/onibus/api/updateLocBus.php?codBus=".$codBus."&lat=".$lat."&log=".$log."");
 
         //file_put_contents("log2.txt", json_encode($data)."\n", FILE_APPEND);
 
