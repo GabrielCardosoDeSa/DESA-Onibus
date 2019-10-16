@@ -407,8 +407,7 @@ use onibus\InitialController;
                                                 </select>                                                
                                             </div>                                                                  
                                         </div>
-                                    </div>
-                                
+                                    </div>                                
                                 </div>
                             </div>
                         </div>
@@ -446,7 +445,6 @@ use onibus\InitialController;
                             <br>
                             <p class="mb-0"><b>Número do registro:</b> 12345678901</p>
                             <p class="mb-0"><b>Validade da CNH:</b> 10-01-1993</p>
-                
                         </div>
                         <div class="col-lg-6 col-md-12">
                             <p class="mb-0"><b>Logradouro:</b> Endereço do motorista</p>
