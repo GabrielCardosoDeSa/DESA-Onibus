@@ -4,7 +4,7 @@ namespace onibus\view;
 
 include_once('../../config.php');
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/InitialController.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/CadastroMotoristaController.php');
 
 
 
@@ -194,7 +194,13 @@ use onibus\InitialController;
                                                                 <input type="number" id="celular" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-9 col-md-6 col-sm-12">
+                                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="cep" class="control-label">CEP</label>
+                                                                <input type="number" id="cep" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12">
                                                             <div class="form-group">
                                                                 <label for="logradouro" class="control-label">Logradouro</label>
                                                                 <input type="text" id="logradouro" class="form-control">
@@ -362,7 +368,13 @@ use onibus\InitialController;
                                                 <input type="number" id="celular" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-lg-9 col-md-6 col-sm-12">
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label for="cep" class="control-label">CEP</label>
+                                                <input type="number" id="cep" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="form-group">
                                                 <label for="logradouro" class="control-label">Logradouro</label>
                                                 <input type="text" id="logradouro" class="form-control">
@@ -414,8 +426,8 @@ use onibus\InitialController;
                     </div>  
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Concluir</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Concluir</button>
                 </div>
             </div>
         </div>

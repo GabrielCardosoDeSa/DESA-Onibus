@@ -4,7 +4,7 @@ namespace onibus\view;
 
 include_once('../../config.php');
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/InitialController.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/CadastroVeiculoController.php');
 
 
 
@@ -196,6 +196,12 @@ use onibus\InitialController;
                                                             </div>                                                           
                                                         </div>                                                       
                                                     </div>
+                                                    <div class="row justify-content-end m-t-25">
+                                                        <div class="col-lg-3 col-md-6 col-sm-12 align-self-end">
+                                                            <button type="button" class="btn btn-primary width100p">Adicionar</button>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
 
@@ -321,8 +327,8 @@ use onibus\InitialController;
                     </div>  
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Concluir</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Concluir</button>
                 </div>
             </div>
         </div>

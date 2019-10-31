@@ -101,8 +101,8 @@
                         <li class="active"><a href=""><i class="icon-home"></i><span>Painel de controle</span></a></li>
 
                         <li class="heading">Formulários</li>
-                        <li class="middle">
-                            <a href="" class="has-arrow"><i class="icon-note"></i><span>Cadastros</span></a>
+                        <li class="">
+                            <a href="#" class="has-arrow"><i class="icon-note"></i><span>Cadastros</span></a>
                             <ul>
                                 <li><a href="cadastro-motorista.php">Motoristas</a></li>
                                 <li><a href="cadastro-veiculo.php">Veículos</a></li>

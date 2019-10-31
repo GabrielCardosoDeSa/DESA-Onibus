@@ -1,3 +1,3 @@
 <?php
 	
-	$config = ['nameProject' => 'DESA-Onibus'];
+	$config = ['nameProject' => 'igbus'];

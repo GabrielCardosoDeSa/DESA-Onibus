@@ -4,8 +4,6 @@ namespace onibus;
 
 include_once('../../config.php');
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/model/Veiculo.php');
-
 include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/Controller.php');
 
 /**
@@ -14,7 +12,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/'.$config['nameProject'].'/controller/C
 
  */
 
-class InitialController extends Controller
+class CadastroMotoristaController extends Controller
 
 {
 
@@ -25,15 +23,6 @@ class InitialController extends Controller
     {
 
         parent::__construct();
-
-    }
-
-
-    public function getLocVehicles($data)
-
-    {
-
-
 
     }
 

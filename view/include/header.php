@@ -18,5 +18,6 @@
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/color_skins.css">
     <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/simple-line-icon.css">
 </head>
 <body class="theme-blue">
